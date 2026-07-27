@@ -9,94 +9,85 @@
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:#000;color:#fff;font-family:Arial,sans-serif;overflow:hidden}
 .swiper{width:100%;padding:40px 0 60px;overflow:visible}
+.swiper-wrapper{align-items:flex-start}
 .swiper-slide{width:240px;opacity:.35;transform:scale(.72);transition:.35s;text-align:center}
 .swiper-slide-active{opacity:1;transform:scale(1)}
 .swiper-slide img{width:180px;height:260px;object-fit:contain;margin:0 auto 6px;display:block}
 h3{font-size:15px;line-height:1.35;margin:4px 0;color:#fff}
 p{font-size:13px;line-height:1.4;margin:8px 0 18px;color:#fff}
-.btn{display:inline-block;background:#fff;color:#000;text-decoration:none;
-padding:12px 26px;border-radius:999px;font-weight:bold}
+.btn,button.btn{
+display:inline-block;
+background:#fff;
+color:#000;
+text-decoration:none;
+padding:12px 26px;
+border-radius:999px;
+font-weight:bold;
+border:none;
+font-size:14px;
+}
+button.btn:disabled{opacity:.55;cursor:not-allowed}
 .swiper-button-next,.swiper-button-prev{color:#fff}
 </style>
 </head>
 <body>
 <div class="swiper">
+<div class="swiper-wrapper">
+
 <div class="swiper-slide">
-    <img src="https://images.epype.io/users/120215/image-library/16f327594a332db86b7009cf095ccb8b9563b55d.png" alt="Jack Daniel's Old No. 7">
-
-    <h3>JACK DANIEL'S OLD NO. 7 TENNESSEE WHISKEY</h3>
-
-    <p>Charcoal Mellowed. Drop by Drop.</p>
-
-    <a href="https://vlp.epype.io/6WXGbk" target="_blank" rel="noopener noreferrer" class="btn">
-        Learn More
-    </a>
+<img src="https://images.epype.io/users/120215/image-library/16f327594a332db86b7009cf095ccb8b9563b55d.png" alt="">
+<h3>JACK DANIEL'S OLD NO. 7 TENNESSEE WHISKEY</h3>
+<p>Charcoal Mellowed. Drop by Drop.</p>
+<a href="https://vlp.epype.io/6WXGbk" target="_blank" rel="noopener noreferrer" class="btn">Learn More</a>
 </div>
 
 <div class="swiper-slide">
-    <img src="https://images.epype.io/users/120215/image-library/5429cab067f5d21c41d8d56fa44016f58d2f38f1.png" alt="Single Barrel Select">
-
-    <h3>Jack Daniel's Single Barrel Select Tennessee Whiskey</h3>
-
-    <p>Our signature Single Barrel offering.</p>
-
-    <button class="btn" disabled>Learn More</button>
+<img src="https://images.epype.io/users/120215/image-library/5429cab067f5d21c41d8d56fa44016f58d2f38f1.png" alt="">
+<h3>Jack Daniel's Single Barrel Select Tennessee Whiskey</h3>
+<p>Our signature Single Barrel offering.</p>
+<button class="btn" disabled>Learn More</button>
 </div>
 
 <div class="swiper-slide">
-    <img src="https://images.epype.io/users/120215/image-library/45bd5fdc56b962877a1a28a5fdba052c9aef9193.png" alt="Gentleman Jack">
-
-    <h3>Gentleman Jack Double Mellowed Tennessee Whiskey</h3>
-
-    <p>Double mellowed for exceptional smoothness.</p>
-
-    <button class="btn" disabled>Learn More</button>
+<img src="https://images.epype.io/users/120215/image-library/45bd5fdc56b962877a1a28a5fdba052c9aef9193.png" alt="">
+<h3>Gentleman Jack Double Mellowed Tennessee Whiskey</h3>
+<p>Double mellowed for exceptional smoothness.</p>
+<button class="btn" disabled>Learn More</button>
 </div>
 
 <div class="swiper-slide">
-    <img src="https://images.epype.io/users/120215/image-library/15d0388ecc5bc8daf342316ddcf78bfc655a8d53.png" alt="Blackberry">
-
-    <h3>Jack Daniel's Tennessee Blackberry</h3>
-
-    <p>THE ONLY BLACKBERRY BURSTING WITH JACK.</p>
-
-    <button class="btn" disabled>Learn More</button>
+<img src="https://images.epype.io/users/120215/image-library/15d0388ecc5bc8daf342316ddcf78bfc655a8d53.png" alt="">
+<h3>Jack Daniel's Tennessee Blackberry</h3>
+<p>THE ONLY BLACKBERRY BURSTING WITH JACK.</p>
+<button class="btn" disabled>Learn More</button>
 </div>
 
 <div class="swiper-slide">
-    <img src="https://images.epype.io/users/120215/image-library/20a8ead73b9e2f00b6c03830e24f610c12706510.png" alt="Honey">
-
-    <h3>Jack Daniel's Tennessee Honey</h3>
-
-    <p>A LITTLE BIT OF HONEY, A WHOLE LOT OF JACK.</p>
-
-    <button class="btn" disabled>Learn More</button>
+<img src="https://images.epype.io/users/120215/image-library/20a8ead73b9e2f00b6c03830e24f610c12706510.png" alt="">
+<h3>Jack Daniel's Tennessee Honey</h3>
+<p>A LITTLE BIT OF HONEY, A WHOLE LOT OF JACK.</p>
+<button class="btn" disabled>Learn More</button>
 </div>
 
 <div class="swiper-slide">
-    <img src="https://images.epype.io/users/120215/image-library/517790a85db6ec8fd961862a0130da62150e61be.png" alt="Apple">
-
-    <h3>Jack Daniel's Tennessee Apple</h3>
-
-    <p>JACK TO THE CORE.</p>
-
-    <button class="btn" disabled>Learn More</button>
+<img src="https://images.epype.io/users/120215/image-library/517790a85db6ec8fd961862a0130da62150e61be.png" alt="">
+<h3>Jack Daniel's Tennessee Apple</h3>
+<p>JACK TO THE CORE.</p>
+<button class="btn" disabled>Learn More</button>
 </div>
 
 <div class="swiper-slide">
-    <img src="https://images.epype.io/users/120215/image-library/376aa68904e7efca972ec3cfc427d0725bb5417f.png" alt="Fire">
-
-    <h3>Jack Daniel's Tennessee Fire</h3>
-
-    <p>BOLD LIKE JACK WITH A WARM CINNAMON FINISH.</p>
-
-    <button class="btn" disabled>Learn More</button>
+<img src="https://images.epype.io/users/120215/image-library/376aa68904e7efca972ec3cfc427d0725bb5417f.png" alt="">
+<h3>Jack Daniel's Tennessee Fire</h3>
+<p>BOLD LIKE JACK WITH A WARM CINNAMON FINISH.</p>
+<button class="btn" disabled>Learn More</button>
 </div>
 
 </div>
 <div class="swiper-button-prev"></div>
 <div class="swiper-button-next"></div>
 </div>
+
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
 new Swiper('.swiper',{
