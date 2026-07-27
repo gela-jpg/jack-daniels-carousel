@@ -1,144 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Jack Daniel's Premium Carousel</title>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-
+<title>Jack Daniel's Coverflow</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{
-background:#000;
-font-family:Arial,Helvetica,sans-serif;
-color:#fff;
-}
-.swiper{
-width:100%;
-padding:40px 0 30px;
-overflow:visible;
-}
-.swiper-slide{
-width:72%;
-max-width:320px;
-opacity:.35;
-transform:scale(.75);
-transition:.35s;
-text-align:center;
-}
-.swiper-slide-active{
-opacity:1;
-transform:scale(1);
-}
-.swiper-slide img{
-display:block;
-margin:0 auto;
-width:100%;
-max-width:200px;
-height:260px;
-object-fit:contain;
-}
-h3{
-font-size:15px;
-line-height:1.35;
-margin-top:6px;
-color:#fff;
-}
-p{
-margin:8px auto 18px;
-font-size:13px;
-max-width:260px;
-color:#fff;
-}
-.btn{
-display:inline-block;
-background:#fff;
-color:#000;
-padding:12px 28px;
-border-radius:999px;
-font-weight:bold;
-text-decoration:none;
-}
-.swiper-button-next,
-.swiper-button-prev{
-color:#fff;
-width:40px;
-height:40px;
-}
+body{background:#000;color:#fff;font-family:Arial,sans-serif;overflow:hidden}
+.swiper{width:100%;padding:40px 0 60px;overflow:visible}
+.swiper-slide{width:240px;opacity:.35;transform:scale(.72);transition:.35s;text-align:center}
+.swiper-slide-active{opacity:1;transform:scale(1)}
+.swiper-slide img{width:180px;height:260px;object-fit:contain;margin:0 auto 6px;display:block}
+h3{font-size:15px;line-height:1.35;margin:4px 0;color:#fff}
+p{font-size:13px;line-height:1.4;margin:8px 0 18px;color:#fff}
+.btn{display:inline-block;background:#fff;color:#000;text-decoration:none;
+padding:12px 26px;border-radius:999px;font-weight:bold}
+.swiper-button-next,.swiper-button-prev{color:#fff}
 </style>
 </head>
 <body>
-
 <div class="swiper">
 <div class="swiper-wrapper">
-
-<div class="swiper-slide">
-<img src="https://images.epype.io/users/120215/image-library/16f327594a332db86b7009cf095ccb8b9563b55d.png">
-<h3>JACK DANIEL'S OLD NO. 7 TENNESSEE WHISKEY</h3>
-<p>Charcoal Mellowed. Drop by Drop.</p>
-<a class="btn" href="#">Learn More</a>
-</div>
-
-<div class="swiper-slide">
-<img src="https://images.epype.io/users/120215/image-library/5429cab067f5d21c41d8d56fa44016f58d2f38f1.png">
-<h3>Single Barrel Select</h3>
-<p>Our signature Single Barrel offering.</p>
-<a class="btn" href="#">Learn More</a>
-</div>
-
-<div class="swiper-slide">
-<img src="https://images.epype.io/users/120215/image-library/45bd5fdc56b962877a1a28a5fdba052c9aef9193.png">
-<h3>Gentleman Jack</h3>
-<p>Double mellowed for exceptional smoothness.</p>
-<a class="btn" href="#">Learn More</a>
-</div>
-
-<div class="swiper-slide">
-<img src="https://images.epype.io/users/120215/image-library/15d0388ecc5bc8daf342316ddcf78bfc655a8d53.png">
-<h3>Tennessee Blackberry</h3>
-<p>THE ONLY BLACKBERRY BURSTING WITH JACK.</p>
-<a class="btn" href="#">Learn More</a>
-</div>
-
-<div class="swiper-slide">
-<img src="https://images.epype.io/users/120215/image-library/20a8ead73b9e2f00b6c03830e24f610c12706510.png">
-<h3>Tennessee Honey</h3>
-<p>A LITTLE BIT OF HONEY, A WHOLE LOT OF JACK.</p>
-<a class="btn" href="#">Learn More</a>
-</div>
-
-<div class="swiper-slide">
-<img src="https://images.epype.io/users/120215/image-library/517790a85db6ec8fd961862a0130da62150e61be.png">
-<h3>Tennessee Apple</h3>
-<p>JACK TO THE CORE.</p>
-<a class="btn" href="#">Learn More</a>
-</div>
-
-<div class="swiper-slide">
-<img src="https://images.epype.io/users/120215/image-library/376aa68904e7efca972ec3cfc427d0725bb5417f.png">
-<h3>Tennessee Fire</h3>
-<p>BOLD LIKE JACK WITH A WARM CINNAMON FINISH.</p>
-<a class="btn" href="#">Learn More</a>
-</div>
+<div class="swiper-slide"><img src="https://images.epype.io/users/120215/image-library/16f327594a332db86b7009cf095ccb8b9563b55d.png"><h3>JACK DANIEL'S OLD NO. 7 TENNESSEE WHISKEY</h3><p>Charcoal Mellowed. Drop by Drop.</p><a href="#" class="btn">Learn More</a></div>
+<div class="swiper-slide"><img src="https://images.epype.io/users/120215/image-library/5429cab067f5d21c41d8d56fa44016f58d2f38f1.png"><h3>Jack Daniel's Single Barrel Select Tennessee Whiskey</h3><p>Our signature Single Barrel offering.</p><a href="#" class="btn">Learn More</a></div>
+<div class="swiper-slide"><img src="https://images.epype.io/users/120215/image-library/45bd5fdc56b962877a1a28a5fdba052c9aef9193.png"><h3>Gentleman Jack Double Mellowed Tennessee Whiskey</h3><p>Double mellowed for exceptional smoothness.</p><a href="#" class="btn">Learn More</a></div>
+<div class="swiper-slide"><img src="https://images.epype.io/users/120215/image-library/15d0388ecc5bc8daf342316ddcf78bfc655a8d53.png"><h3>Jack Daniel's Tennessee Blackberry</h3><p>THE ONLY BLACKBERRY BURSTING WITH JACK.</p><a href="#" class="btn">Learn More</a></div>
+<div class="swiper-slide"><img src="https://images.epype.io/users/120215/image-library/20a8ead73b9e2f00b6c03830e24f610c12706510.png"><h3>Jack Daniel's Tennessee Honey</h3><p>A LITTLE BIT OF HONEY, A WHOLE LOT OF JACK.</p><a href="#" class="btn">Learn More</a></div>
+<div class="swiper-slide"><img src="https://images.epype.io/users/120215/image-library/517790a85db6ec8fd961862a0130da62150e61be.png"><h3>Jack Daniel's Tennessee Apple</h3><p>JACK TO THE CORE.</p><a href="#" class="btn">Learn More</a></div>
+<div class="swiper-slide"><img src="https://images.epype.io/users/120215/image-library/376aa68904e7efca972ec3cfc427d0725bb5417f.png"><h3>Jack Daniel's Tennessee Fire</h3><p>BOLD LIKE JACK WITH A WARM CINNAMON FINISH.</p><a href="#" class="btn">Learn More</a></div>
 
 </div>
 <div class="swiper-button-prev"></div>
 <div class="swiper-button-next"></div>
 </div>
-
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
 new Swiper('.swiper',{
+effect:'coverflow',
 loop:true,
 centeredSlides:true,
 slidesPerView:'auto',
-spaceBetween:10,
-grabCursor:true,
 initialSlide:0,
+grabCursor:true,
+coverflowEffect:{
+rotate:0,
+stretch:0,
+depth:180,
+modifier:1.2,
+scale:.82,
+slideShadows:false
+},
 navigation:{nextEl:'.swiper-button-next',prevEl:'.swiper-button-prev'}
 });
 </script>
-
 </body>
 </html>
